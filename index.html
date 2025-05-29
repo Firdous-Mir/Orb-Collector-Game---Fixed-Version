@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orb Collector - Loop Game</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        
+        <div id="ui-overlay">
+            <div class="ui-panel">
+                <div class="ui-title">Score</div>
+                <div id="score" class="ui-value">0</div>
+            </div>
+            <div class="ui-panel">
+                <div class="ui-title">Level</div>
+                <div id="level" class="ui-value">1</div>
+            </div>
+            <div class="ui-panel">
+                <div class="ui-title">High Score</div>
+                <div id="high-score" class="ui-value">0</div>
+            </div>
+        </div>
+        
+        <div id="level-up" class="level-indicator">Level Up!</div>
+        
+        <div id="start-screen" class="game-screen">
+            <h1 class="game-title">ORB COLLECTOR</h1>
+            <div class="instructions">
+                <p>Collect <span class="highlight">energy orbs</span> while avoiding enemies!</p>
+                <p>Move your mouse to control the player. Each orb collected gives you <span class="highlight">10 points</span>.</p>
+                <p>Complete each level by collecting <span class="highlight">20 orbs</span> to advance.</p>
+                <p>Watch out - enemies get <span class="highlight">faster each level!</span></p>
+            </div>
+            <button id="start-btn" class="btn">START GAME</button>
+        </div>
+        
+        <div id="game-over" class="game-screen">
+            <h1 class="game-title">GAME OVER</h1>
+            <div class="score-display">
+                Your Score: <span id="final-score">0</span>
+            </div>
+            <div class="score-display">
+                High Score: <span id="final-high-score" class="high-score">0</span>
+            </div>
+            <button id="restart-btn" class="btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>
